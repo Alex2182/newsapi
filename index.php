@@ -8,7 +8,6 @@
    <p><select name="country"></p>
     <option>us</option>
     <option>gb</option>
-    <option>jp</option>
     <option>ru</option>
     </select></p>
    <p><input type="submit"></p>
