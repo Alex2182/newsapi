@@ -1,7 +1,7 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <title>Тег FORM</title>
+  <title>NewsAPI test</title>
  </head>
  <body>
   <form action="index.php"  method="get">
