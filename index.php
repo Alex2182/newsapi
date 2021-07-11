@@ -7,7 +7,6 @@
   <form action="index.php"  method="get">
    <p><select name="country"></p>
     <option>us</option>
-    <option>gb</option>
     <option>ru</option>
     </select></p>
    <p><input type="submit"></p>
