@@ -5,17 +5,18 @@
  </head>
  <body>
 <?php
-  <form action="index.php"  method="post">
+$country=$_POST['country'];
+echo  '<form action="index.php"  method="post">
    <select name="country"></p>
     <option>us</option>
     <option>ru</option>
     </select>
    <input type="submit">
  </form>
-<table>
+<table>';
 
 //use jcobhams\NewsApi\NewsApi;
-$country=$_POST['country'];
+
 //echo $country;
 $top = file_get_contents('https://newsapi.org/v2/top-headlines?country='.$country.'&apiKey=7930a83dbbf04f469cd6a586465aad67');
 $array=json_decode($top,true);
