@@ -7,10 +7,9 @@
 <?php
 $country=$_POST['country'];
 echo  '<form action="index.php"  method="post">
-   <select name="country"></p>
-    <option>us</option>
-    <option>ru</option>
-    </select>
+   <select name="country"></p>';
+echo ($country == 'ru') ? '<option>us</option><option selected>ru</option>' : '<option selected>us</option><option>ru</option>';    
+echo  '</select>
    <input type="submit">
  </form>
 <table>';
