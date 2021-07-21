@@ -4,15 +4,16 @@
   <title>NewsAPI test</title>
  </head>
  <body>
+<?php
   <form action="index.php"  method="post">
-   <p><select name="country"></p>
+   <select name="country"></p>
     <option>us</option>
     <option>ru</option>
-    </select></p>
-   <p><input type="submit"></p>
+    </select>
+   <input type="submit">
  </form>
 <table>
-<?php
+
 //use jcobhams\NewsApi\NewsApi;
 $country=$_POST['country'];
 //echo $country;
