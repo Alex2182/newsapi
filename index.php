@@ -4,7 +4,7 @@
   <title>NewsAPI test</title>
  </head>
  <body>
-  <form action="index.php"  method="get">
+  <form action="index.php"  method="post">
    <p><select name="country"></p>
     <option>us</option>
     <option>ru</option>
@@ -14,7 +14,7 @@
 <table>
 <?php
 //use jcobhams\NewsApi\NewsApi;
-$country=$_GET['country'];
+$country=$_POST['country'];
 //echo $country;
 $top = file_get_contents('https://newsapi.org/v2/top-headlines?country='.$country.'&apiKey=7930a83dbbf04f469cd6a586465aad67');
 $array=json_decode($top,true);
